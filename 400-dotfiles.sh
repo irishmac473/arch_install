@@ -26,5 +26,5 @@ ln -s $HOME/dotfiles/zshrc $HOME/.zshrc
 ln -s $HOME/dotfiles/config/compton.conf $HOME/.config/
 ln -s $HOME/dotfiles/config/pirate-get $HOME/.config/
 ln -s $HOME/dotfiles/config/ranger/rc.conf $HOME/.config/ranger/
-sudo cp $HOME/dotfiles/xorg.conf.d /etc/X11/
+sudo cp -r $HOME/dotfiles/xorg.conf.d /etc/X11/
 
