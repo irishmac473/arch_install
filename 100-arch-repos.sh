@@ -1,11 +1,11 @@
-#!/bin/bash
+#!/bin/zsh
 set -e
 
 sudo pacman -S --noconfirm --needed figlet
 sudo pacman -S --noconfirm --needed reflector
 clear
 figlet "Finding fastest mirrors and updating system"
-sudo reflector --country "United States" --age 12 --protocol https --sort rate --save /etc/pacman.d/mirrorlist
+sudo reflector --verbose --country "United States" --age 12  --sort rate --save /etc/pacman.d/mirrorlist
 sudo pacman -Syyu --noconfirm
 
 clear
@@ -66,4 +66,4 @@ sudo pacman -S --noconfirm --needed acpi
 sudo pacman -S --noconfirm --needed tpacpi-bat
 sudo pacman -S --noconfirm --needed sysstat
 sudo pacman -S --noconfirm --needed xfce4-power-manager
-
+sudo pacman -S --noconfirm --needed wget
