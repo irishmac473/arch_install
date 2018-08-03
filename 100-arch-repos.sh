@@ -67,3 +67,7 @@ sudo pacman -S --noconfirm --needed tpacpi-bat
 sudo pacman -S --noconfirm --needed sysstat
 sudo pacman -S --noconfirm --needed xfce4-power-manager
 sudo pacman -S --noconfirm --needed wget
+sudo pacman -S --noconfirm --needed lib32-mesa
+sudo pacman -S --noconfirm --needed ttf-liberation
+sudo pacman -S --noconfirm --needed steam
+sudo pacman -S --noconfirm --needed steam-native-runtime

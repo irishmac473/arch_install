@@ -17,4 +17,5 @@ yay -S --noconfirm vtop
 yay -S --noconfirm consolas-font
 yay -S --noconfirm transmission-remote-cli-git
 yay -S --noconfirm i3lock-fancy-git
+yay -S --noconfirm steam-fonts
 yay -S dropbox
