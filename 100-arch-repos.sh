@@ -71,3 +71,5 @@ sudo pacman -S --noconfirm --needed lib32-mesa
 sudo pacman -S --noconfirm --needed ttf-liberation
 sudo pacman -S --noconfirm --needed steam
 sudo pacman -S --noconfirm --needed steam-native-runtime
+sudo pacman -S --noconfirm --needed dwarffortress
+sudo pacman -S --noconfirm --needed stone-soup
