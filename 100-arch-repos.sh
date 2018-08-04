@@ -73,3 +73,4 @@ sudo pacman -S --noconfirm --needed steam
 sudo pacman -S --noconfirm --needed steam-native-runtime
 sudo pacman -S --noconfirm --needed dwarffortress
 sudo pacman -S --noconfirm --needed stone-soup
+sudo pacman -S --noconfirm --needed xorg-fonts-misc
