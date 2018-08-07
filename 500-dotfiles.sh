@@ -28,3 +28,5 @@ ln -s $HOME/dotfiles/config/pirate-get $HOME/.config/
 ln -s $HOME/dotfiles/config/ranger/rc.conf $HOME/.config/ranger/
 sudo cp -r $HOME/dotfiles/xorg.conf.d /etc/X11/
 
+sudo systemctl enable fstrim.timer
+sudo systemctl enable snapd.socket
