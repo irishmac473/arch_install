@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 set -e
 
 clear
@@ -10,10 +10,10 @@ clear
 figlet "Symlink dotfiles"
 
 ranger --copy-config=all
-rm .zshrc
-rm .bashrc
-rm .bash_profile
-rm .config/ranger/rc.conf
+##rm .zshrc
+rm ~/.bashrc
+rm ~/.bash_profile
+rm ~/.config/ranger/rc.conf
 sudo rm -rf /etc/X11/xorg.conf.d
 ln -s $HOME/dotfiles/bash_profile $HOME/.bash_profile
 ln -s $HOME/dotfiles/bashrc $HOME/.bashrc
@@ -22,11 +22,15 @@ ln -s $HOME/dotfiles/i3blocks.conf $HOME/.i3blocks.conf
 ln -s $HOME/dotfiles/scripts $HOME/.scripts
 ln -s $HOME/dotfiles/xinitrc $HOME/.xinitrc
 ln -s $HOME/dotfiles/Xresources $HOME/.Xresources
-ln -s $HOME/dotfiles/zshrc $HOME/.zshrc
+##ln -s $HOME/dotfiles/zshrc $HOME/.zshrc
 ln -s $HOME/dotfiles/config/compton.conf $HOME/.config/
 ln -s $HOME/dotfiles/config/pirate-get $HOME/.config/
 ln -s $HOME/dotfiles/config/ranger/rc.conf $HOME/.config/ranger/
+ln -s $HOME/dotfiles/config/fish $HOME/.config/
 sudo cp -r $HOME/dotfiles/xorg.conf.d /etc/X11/
 
 sudo systemctl enable fstrim.timer
-sudo systemctl enable snapd.socket
+
+clear
+figlet "Changing shell to fish"
+chsh -s /usr/bin/fish

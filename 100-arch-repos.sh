@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 set -e
 
 sudo pacman -S --noconfirm --needed figlet
@@ -22,10 +22,7 @@ sudo pacman -S --noconfirm --needed compton
 sudo pacman -S --noconfirm --needed volumeicon
 sudo pacman -S --noconfirm --needed xf86-video-intel
 sudo pacman -S --noconfirm --needed alsa-utils
-sudo pacman -S --noconfirm --needed emacs
-sudo pacman -S --noconfirm --needed zsh
 sudo pacman -S --noconfirm --needed xfce4-terminal
-sudo pacman -S --noconfirm --needed git
 sudo pacman -S --noconfirm --needed adobe-source-code-pro-fonts
 sudo pacman -S --noconfirm --needed neofetch
 sudo pacman -S --noconfirm --needed w3m
@@ -42,9 +39,6 @@ sudo pacman -S --noconfirm --needed python2-pip
 sudo pacman -S --noconfirm --needed youtube-dl
 sudo pacman -S --noconfirm --needed npm
 sudo pacman -S --noconfirm --needed pianobar
-sudo pacman -S --noconfirm --needed angband
-sudo pacman -S --noconfirm --needed go
-sudo pacman -S --noconfirm --needed go-tools
 sudo pacman -S --noconfirm --needed transmission-cli
 sudo pacman -S --noconfirm --needed htop
 sudo pacman -S --noconfirm --needed nitrogen
@@ -71,6 +65,19 @@ sudo pacman -S --noconfirm --needed lib32-mesa
 sudo pacman -S --noconfirm --needed ttf-liberation
 sudo pacman -S --noconfirm --needed steam
 sudo pacman -S --noconfirm --needed steam-native-runtime
-sudo pacman -S --noconfirm --needed dwarffortress
-sudo pacman -S --noconfirm --needed stone-soup
 sudo pacman -S --noconfirm --needed xorg-fonts-misc
+sudo pacman -S --noconfirm --needed go
+sudo pacman -S --noconfirm --needed go-tools
+sudo pacman -S --noconfirm --needed curl
+sudo pacman -S --noconfirm --needed python-neovim
+sudo pacman -S --noconfirm --needed python2-neovim
+sudo pacman -S --noconfirm --needed calibre
+sudo pacman -S --noconfirm --needed kitty
+sudo pacman -S --noconfirm --needed fish
+sudo pacman -S --noconfirm --needed tmux
+sudo pacman -S --noconfirm --needed thunar
+sudo pacman -S --noconfirm --needed gvfs
+sudo pacman -S --noconfirm --needed tumbler
+sudo pacman -S --noconfirm --needed thunar-volman
+sudo pacman -S --noconfirm --needed thunar-archive-plugin
+sudo pacman -S --noconfirm --needed thunar-media-tags-plugin
